@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/welcome")
+
 public class WelcomeController {
     @GetMapping
     public ResponseEntity<String> welcome(){
@@ -17,5 +17,10 @@ public class WelcomeController {
     @GetMapping("/a")
     public ResponseEntity<String> godbye(){
         return new ResponseEntity<>("goodbye to CI CD", HttpStatus.OK);
+    }
+
+    @GetMapping("/t")
+    public String work(){
+        return "work in progress";
     }
 }
