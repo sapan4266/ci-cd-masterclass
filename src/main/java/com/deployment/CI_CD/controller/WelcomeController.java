@@ -14,4 +14,8 @@ public class WelcomeController {
     public ResponseEntity<String> welcome(){
         return new ResponseEntity<>("Welcome to CI CD", HttpStatus.OK);
     }
+    @GetMapping("/a")
+    public ResponseEntity<String> godbye(){
+        return new ResponseEntity<>("goodbye to CI CD", HttpStatus.OK);
+    }
 }
